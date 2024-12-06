@@ -1,0 +1,17 @@
+The issue is resolved by ensuring proper spacing and unit handling within the `calc()` function.  Avoid spaces between operators and values.  Make sure percentages are used consistently and carefully combined with fixed units. Ensure that the calculation is syntactically correct. Always check for any inconsistencies or missing parentheses. 
+
+```css
+/* Incorrect usage */
+.element {
+  width: calc(50% + 10 px);
+  /*Corrected Usage*/
+width: calc(50% + 10px);
+}
+
+/* Incorrect usage */
+.element2 {
+  height: calc(100vh - 200px );
+  /*Corrected Usage*/
+height: calc(100vh - 200px);
+}
+```
